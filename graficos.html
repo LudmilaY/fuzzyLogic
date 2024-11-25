@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Sistema Nebuloso</title>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/modules/exporting.js"></script>
+
+
+	
+	<script type="text/javascript">
+
+		var alto = [[2.5,0],[3,1],[3.5,1]];
+		var baixo = [[0,1],[1,1],[1.5,0]];
+		var medio = [[1.5,0],[2,1],[2.5,0]];
+		$(function desenhaGrafico () {
+
+			
+				
+
+				$('#container').highcharts({
+					title: {
+						text: 'Criticidade',
+		            x: -20 //center
+		        },
+		        subtitle: {
+		        	text: 'Nível de criticidade de um item',
+		        	x: -20
+		        },
+		        xAxis: {
+		            // categories: [1,2,3]
+		        },
+		        yAxis: {
+		        	title: {
+		        		text: 'Grau de Pertinencia'
+		        	},
+		        	plotLines: [{
+		        		value: 0,
+		        		width: 1,
+		        		color: '#808080'
+		        	}]
+		        },
+		        tooltip: {
+		            // valueSuffix: '°C'
+		        },
+		        legend: {
+		        	layout: 'vertical',
+		        	align: 'right',
+		        	verticalAlign: 'middle',
+		        	borderWidth: 0
+		        },
+		        series: [{
+		        	name: 'Baixo',
+		        	data: baixo
+		        }, {
+		        	name: 'Médio',
+		        	data: medio
+		        }, {
+		        	name: 'Alto',
+		        	data: alto
+		        }]
+		    });
+
+
+				$('#btn').click(function () {
+					baixo = [[2.1,0],[3,1],[3.5,1]];
+					medio = [[0,1],[1,1],[1.8,0]];
+					alto = [[1.6,0],[2,1],[2.3,0]];
+					var chart = $('#container').highcharts();
+					chart.series[0].setData(baixo);
+					chart.series[1].setData(medio);
+					chart.series[2].setData(alto);
+				});
+		
+
+
+});
+
+</script>
+</head>
+<body>
+	<div id="container" style="width: 810px; height: 400px; margin: 0 auto">
+		
+		
+	</div>
+	
+	<button id="btn"> Clique </button>
+	
+</body>
+</html>	

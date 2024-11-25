@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Sistema Nebuloso</title>
+	<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/style.css"></link>
+	<script src="js/scripts.js"></script>
+		<script src="js/highcharts.js"></script>
+	<script src="js/modules/exporting.js"></script>
+
+		<script type="text/javascript">
+
+		
+</script>
+</head>
+<body>
+	<div class="container">
+		<label for="idade">Criticidade</label>
+		<input type="number" id="criticidade" placeholder="Digite a Criticidade">
+		<br/>
+		<label for="idade">Coeficiente de Variacao</label>
+		<input type="number" id="coeficiente" placeholder="Digite o Coeficiente">
+		<br/>	
+		<label for="idade">Perda diaria esperada</label>
+		<input type="number" id="perda" placeholder="Digite a Perda">
+		<br/>
+		<label for="idade">Estoque esperado</label>
+		<input type="number" id="estoque" placeholder="Digite o Estoque">
+		<br/>		
+		<button id="executar"> Executar</button>
+		<span>A prioridade é: <span id="resultado"> </span></span>
+			<br>
+
+		
+		<button id="executarArquivo"> Executar Vários</button>
+		<label for="executarArquivo">Clique para calcular vários itens automaticamente</label>
+	</div>
+	
+	<div id="grafico" style="width: 810px; height: 400px; margin: 0 auto">
+		
+		
+	</div>
+</body>
+</html>	

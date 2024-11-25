@@ -1,0 +1,60 @@
+[{
+"criticidade" : 2,
+"prazo" : 55,
+"perda" : 78.163,
+"estoque": 8
+},
+{
+"criticidade" : 2,
+"coeficiente" : 50,
+"perda" : 38.163,
+"estoque": 2
+},
+
+{
+"criticidade" : 3,
+"coeficiente" : 40,
+"perda" : 28.163,
+"estoque": 38
+},
+{
+"criticidade" : 2,
+"prazo" : 55,
+"perda" : 78.163,
+"estoque": 8
+},
+{
+"criticidade" : 2,
+"coeficiente" : 50,
+"perda" : 38.163,
+"estoque": 2
+},
+
+{
+"criticidade" : 3,
+"coeficiente" : 40,
+"perda" : 28.163,
+"estoque": 38
+},{
+"criticidade" : 2,
+"prazo" : 55,
+"perda" : 78.163,
+"estoque": 8
+},
+{
+"criticidade" : 2,
+"coeficiente" : 50,
+"perda" : 38.163,
+"estoque": 2
+},
+
+{
+"criticidade" : 3,
+"coeficiente" : 40,
+"perda" : 28.163,
+"estoque": 38
+}
+
+
+]
+
